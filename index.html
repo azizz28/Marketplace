@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marketbidder</title>
-    <link rel="stylesheet" href="styles.css">
+	<title>Slide Navbar</title>
+	<link rel="stylesheet"  href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-    <div class="logo">Maarketplace</div>
-    <div class="search">
-        <form>
-            <input type="text" placeholder="Search...">
-            <button type="submit">Go</button>
-        </form>
-    </div>
-    <ul class="menu">
-        <li><a href="./sell_screen/sell.html" class="navbar">Sell</a></li>
-        <li><a class="navbar" href="./about/about.html">About</a></li>
-        <li><a class="navbar" href="./Bug_report/bug.html">Bugs</a></li>
-        <li><a href="./Cart/cart.html"><img src="./images/cart.png" alt="shoppingcart img" a class="hedimg"></a></li>
-        <li><a href="./sign in/Login.html"><img src="./images/user.png" alt="profile" a class="hedimg"></a></li>
-    </ul>
-    </nav>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+          <input type="number" name="broj" placeholder="BrojTelefona" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
 </body>
 </html>
